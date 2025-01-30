@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./SignUp.css";
+import "./Signup.css";
+
 
 const Signup = () => {
   const [formData, setFormData] = useState({
