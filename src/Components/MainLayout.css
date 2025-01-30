@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow it to expand and center the links */
+    gap: 20px; /* Adds spacing between links */
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 200px;
+  }
+  
+  .search-btn {
+    padding: 0.5rem;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: #3d923f;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cta-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-buttons .login-btn {
+    background-color: white;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .cta-buttons .signup-btn {
+    background-color: white;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .cta-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
