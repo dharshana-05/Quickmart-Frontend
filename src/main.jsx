@@ -14,6 +14,7 @@ import OrderPage from "./Components/OrderPage";
 import OrderConfirmation from "./Components/OrderConfirmation";
 import ProductsPage from "./Components/ProductPage";
 import Cart from "./Components/Cart";
+import CategoryProducts from "./Components/CategoryProducts";
 
 
 const App = () => {
@@ -47,7 +48,9 @@ const App = () => {
           <Route path="/order-confirmation" element={<OrderConfirmation />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
           <Route path="/products" element={<Products cart={cart} setCart={setCart} />} />
-          <Route path="/categories/:categoryId" element={<CategoryDetails />} />
+          {/* <Route path="/categories/:categoryId" element={<CategoryDetails />} /> */}
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/categories/:categoryName" element={<CategoryProducts />} />
 
         </Routes>
       </MainLayout>

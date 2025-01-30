@@ -37,10 +37,10 @@
   
   .product-card img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 150px;
     object-fit: cover;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
   }
   
   .product-info h3 {

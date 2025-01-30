@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Categories.css";
 
-
 const Categories = () => {
   const navigate = useNavigate();
 
@@ -53,13 +52,14 @@ const Categories = () => {
             <div className="category-info">
               <h3>{category.name}</h3>
               <p>{category.description}</p>
- 
-<button
-  className="explore-btn"
-  onClick={() => navigate(`/categories/${category.id}`)}  >
-  Explore {category.name}
-</button>
 
+              {/* Navigate using category name */}
+              <button
+                className="explore-btn"
+                onClick={() => navigate(`/categories/${encodeURIComponent(category.name)}`)}
+              >
+                Explore {category.name}
+              </button>
 
             </div>
           </div>
