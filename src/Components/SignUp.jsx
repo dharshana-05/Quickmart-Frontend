@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./Signup.css";
+import "./signup.css";
 
 
 const Signup = () => {
