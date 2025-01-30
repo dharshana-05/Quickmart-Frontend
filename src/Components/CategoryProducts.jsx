@@ -3,8 +3,7 @@ import { useParams } from "react-router-dom";
 import "./CategoryProducts.css";
 
 const CategoryProducts = () => {
-  const { categoryName } = useParams(); // Get categoryName from URL
-  const [cart, setCart] = useState([]); // State to store cart items
+  const { categoryName } = useParams(); 
 
   const products = [
     { id: 1, name: "Apple", category: "Fruits & Vegetables", price: 100, image: "https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt4bdddb90d9324fc3/667082fe01028f35d4668f1d/types-of-apples-hero.jpg?q=70&width=3840&auto=webp" },

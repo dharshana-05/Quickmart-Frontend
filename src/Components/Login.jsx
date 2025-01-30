@@ -9,7 +9,7 @@ const Login = () => {
   });
 
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false); // Loading state for UX
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate(); 
 
   const handleChange = (e) => {
@@ -34,7 +34,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/login", {
+      const response = await fetch("https://quickmart-grocery-backend-2.onrender.com/api/users ", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

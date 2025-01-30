@@ -12,7 +12,7 @@ const Products = ({ cart, setCart }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/products");
+        const response = await fetch("https://quickmart-grocery-backend-2.onrender.com/api/products");
         const data = await response.json();
         setGroceries(data);
       } catch (error) {
