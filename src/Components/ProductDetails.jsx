@@ -3,17 +3,17 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import './ProductDetails.css';
 
 const ProductDetails = () => {
-  const { id } = useParams();  // Get the product id from the URL (if you still want to fetch from the backend)
-  const location = useLocation(); // Get the state passed via navigation
-  const [product, setProduct] = useState(location.state?.product || null); // Check if product is in state
+  const { id } = useParams();  
+  const location = useLocation(); 
+  const [product, setProduct] = useState(location.state?.product || null); 
   const navigate = useNavigate();
 
   useEffect(() => {
     if (!product) {
-      // If product is not passed via state, fetch it from the backend using id
+      
       const fetchProduct = async () => {
         try {
-          const response = await fetch(`http://localhost:3000/api/products/${id}`);
+          const response = await fetch(`https://quickmart-grocery-backend-2.onrender.com/api/products/${id}`);
           const data = await response.json();
           setProduct(data); // Set product from the fetched data
         } catch (error) {

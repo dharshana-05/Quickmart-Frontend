@@ -34,7 +34,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch("https://quickmart-grocery-backend-2.onrender.com/api/users ", {
+      const response = await fetch("https://quickmart-grocery-backend-2.onrender.com/api/login ", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

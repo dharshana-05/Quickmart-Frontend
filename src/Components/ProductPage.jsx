@@ -9,8 +9,8 @@ const ProductsPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const productResponse = await fetch("http://127.0.0.1:8000/api/products/");
-                const categoryResponse = await fetch("http://127.0.0.1:8000/api/categories/");
+                const productResponse = await fetch("https://quickmart-grocery-backend-2.onrender.com/api/products");
+                const categoryResponse = await fetch("https://quickmart-grocery-backend-2.onrender.com/api/categories/");
 
                 if (!productResponse.ok || !categoryResponse.ok) {
                     throw new Error("Failed to fetch data");

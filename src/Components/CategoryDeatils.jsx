@@ -12,7 +12,7 @@ const CategoryDetails = () => {
 
     const fetchCategoryDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/categories/${categoryId}`);
+        const response = await fetch(`https://quickmart-grocery-backend-2.onrender.com/api/categories/${categoryId}`);
         const data = await response.json();
 
         console.log("Fetched data:", data);
